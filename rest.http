@@ -1,0 +1,24 @@
+POST http://localhost:4000/api/v1/auth/login
+Content-Type: application/json
+
+{   
+"email": "ashab@gmail.com",
+"password": "PassWord123"
+}
+
+
+###
+POST http://localhost:4000/api/v1/articles
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1OTZiYWMzMjg2OTM0NDQwNWFlM2IyZCIsIm5hbWUiOiJBc2hhYiIsImVtYWlsIjoiYXNoYWJAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDQzOTM1NzMsImV4cCI6MTcwNDM5NzE3M30.x7bSlPS5KJfuLaUsJD-awprSQtpgsvXttMCch4mwReU
+
+
+{
+    "title":"Test title",
+    "body":"Test body"
+}
+
+###
+DELETE http://localhost:4000/api/v1/articles/6596f7843b34951aabe9418b
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1OTZiYWMzMjg2OTM0NDQwNWFlM2IyZCIsIm5hbWUiOiJBc2hhYiIsImVtYWlsIjoiYXNoYWJAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDQzOTM1NzMsImV4cCI6MTcwNDM5NzE3M30.x7bSlPS5KJfuLaUsJD-awprSQtpgsvXttMCch4mwReU
